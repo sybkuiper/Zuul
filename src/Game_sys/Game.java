@@ -146,7 +146,7 @@ public class Game {
         if (nextRoom instanceof TreasureRoom){
             Iterator<Item> it = ((TreasureRoom)nextRoom).getItems().iterator();
             while(it.hasNext()){
-                Inventory.addToInv(it);
+                Inventory.addToInv((Item) it);
             }
         }
     }
