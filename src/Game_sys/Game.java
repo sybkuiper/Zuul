@@ -5,7 +5,6 @@ import Room.*;
 import Player.*;
 
 import java.util.Iterator;
-import java.util.Random;
 
 public class Game {
     private Parser parser;
@@ -146,7 +145,7 @@ public class Game {
         if (nextRoom instanceof TreasureRoom){
             Iterator<Item> it = ((TreasureRoom)nextRoom).getItems().iterator();
             while(it.hasNext()){
-                Inventory.addToInv(it);
+                Inventory.addToInv((Item) it);
             }
         }
     }
