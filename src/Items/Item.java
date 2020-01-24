@@ -44,7 +44,7 @@ public abstract class Item {
 
     @Override
     public String toString(){
-        return "Name: " +name + ",  Defense: " + defense + ",  Attack: " + attack + ",  Recovery/extraHealth" +
+        return "Name: " + name + ",  Defense: " + defense + ",  Attack: " + attack + ",  Recovery/extraHealth" +
                 rec + "/" + exHealth + ",  Durability: " + durability;
     }
 }
