@@ -8,13 +8,13 @@ public class TreasureRoom extends Room {
 
     private ArrayList<Item> items;
 
-    public TreasureRoom(String desc, Item item){
-        super(desc);
+    public TreasureRoom(String descE, String descN, Item item){
+        super(descE, descN);
 
     }
 
-    public TreasureRoom(String desc, Item item, Item item2, Item item3, Item item4){
-        super(desc);
+    public TreasureRoom(String descE, String descN, Item item, Item item2, Item item3, Item item4){
+        super(descE, descN);
         items.add(item);
         items.add(item2);
         items.add(item3);

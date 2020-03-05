@@ -1,5 +1,8 @@
 package Room;
 
+import Game_sys.Game;
+import Game_sys.Language;
+
 import java.util.HashMap;
 import java.util.Set;
 
@@ -27,11 +30,14 @@ public abstract class Room {
     }
 
     public String getLongDescriptionE(){
-        return "Je bent " + descriptionE + ".\n" + getExitString();
+        return "You are " + descriptionE + ".\n" + getExitString();
     }
 
     private String getExitString(){
-        String returnString = "Exits:";
+        String returnString = "";
+
+        returnString = "Exits: ";
+
         Set<String> keys = exits.keySet();
         for(String exit : keys){
             returnString += " " + exit;

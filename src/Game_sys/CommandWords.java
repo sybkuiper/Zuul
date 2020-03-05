@@ -1,6 +1,7 @@
 package Game_sys;
 
 public class CommandWords {
+
     private static final String[] validCommands = {
             "go", "quit", "help", "inventory", "chest"
     };

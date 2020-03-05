@@ -27,7 +27,7 @@ public class Player {
         }else{
             currentHealth += health;
         }
-        System.out.println("You now have " + currentHealth + " Health.");
+        System.out.println("Je hebt nu " + currentHealth + " health.");
     }
 
     public int getCurrentHealth(){
