@@ -8,14 +8,11 @@ import java.util.Iterator;
 public class Inventory {
 
 
-    private boolean access;
     private ArrayList<Item> inv;
 
     public Inventory(){
         this.inv = new ArrayList<Item>();
     }
-
-
 
     public void addToInv(Item item){
         inv.add(item);

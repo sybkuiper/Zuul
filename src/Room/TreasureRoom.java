@@ -13,8 +13,12 @@ public class TreasureRoom extends Room {
 
     }
 
-    public TreasureRoom(String desc, Item item, Item item2, Item item3){
+    public TreasureRoom(String desc, Item item, Item item2, Item item3, Item item4){
         super(desc);
+        items.add(item);
+        items.add(item2);
+        items.add(item3);
+        items.add(item4);
     }
 
     public ArrayList<Item> getItems(){

@@ -21,7 +21,7 @@ public abstract class Room {
     }
 
     public String getLongDescription(){
-        return "You are " + description + ".\n" + getExitString();
+        return "Je bent " + description + ".\n" + getExitString();
     }
 
     private String getExitString(){
