@@ -1,6 +1,6 @@
 package Game_sys;
 
-import Items.Item;
+import Items.*;
 import Room.*;
 import Player.*;
 

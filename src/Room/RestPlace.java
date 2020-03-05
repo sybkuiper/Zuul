@@ -5,8 +5,8 @@ public class RestPlace extends Room {
 
     private int recoveringHealth;
 
-    public RestPlace(String desc, int recoveringHealth){
-        super(desc);
+    public RestPlace(String descN, String descE, int recoveringHealth){
+        super(descN, descE);
         this.recoveringHealth = recoveringHealth;
     }
 

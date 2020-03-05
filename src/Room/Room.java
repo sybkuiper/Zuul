@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Set;
 
 public abstract class Room {
-    private String description;
+    private String descriptionN;
+    private String descriptionE;
     private HashMap<String, Room> exits;
 
-    public Room(String description){
-        this.description = description;
+    public Room(String descriptionN, String descriptionE){
+        this.descriptionN = descriptionN;
+        this.descriptionE = descriptionE;
         exits = new HashMap<>();
     }
 
@@ -17,11 +19,15 @@ public abstract class Room {
     }
 
     public String getShortDescription(){
-        return description;
+        return descriptionN;
     }
 
-    public String getLongDescription(){
-        return "Je bent " + description + ".\n" + getExitString();
+    public String getLongDescriptionN(){
+        return "Je bent " + descriptionN + ".\n" + getExitString();
+    }
+
+    public String getLongDescriptionE(){
+        return "Je bent " + descriptionE + ".\n" + getExitString();
     }
 
     private String getExitString(){
