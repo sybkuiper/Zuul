@@ -6,8 +6,8 @@ public class EncounterRoom extends Room {
 
     private boolean encounter;
 
-    public EncounterRoom(String desc, int rate){
-        super(desc);
+    public EncounterRoom(String descN, String descE, int rate){
+        super(descN, descE);
         encountering(rate);
     }
 
